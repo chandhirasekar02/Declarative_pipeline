@@ -4,7 +4,7 @@ pipeline
 
    stages
    {
-    stages('Build')
+    stages('Build') 
    {
    steps
    {
@@ -12,9 +12,9 @@ pipeline
       }
      }
 
-     stage ('Build1 App')
+     stage ('Build1')
      {
-      steps
+      steps 
        {
        echo 'Build1 App'
        }
@@ -22,16 +22,16 @@ pipeline
        stage ('Test')
        {
         steps
-        {
-         echo 'Test App'
-         }
-        }
-         stage ('Deploy')
-         {
-          steps
-          {
-           echo 'Deploy App'
-           }
-          }
-         }
-        }
+	{
+	 echo 'Test App'
+	 }
+	}
+	 stage ('Deploy')
+	 {
+	  steps
+	  {
+	   echo 'Deploy App'
+	   }
+	  }
+	 }
+	}
